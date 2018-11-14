@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AlgorithmObject.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSArray *originalArray = @[@"5",@"5",@"3",@"4",@"90",@"21",@"1",@"55",@"12",@"32",@"88"];
+    NSLog(@"%@",[AlgorithmObject selectionSort:originalArray]);
+    
 }
 
 

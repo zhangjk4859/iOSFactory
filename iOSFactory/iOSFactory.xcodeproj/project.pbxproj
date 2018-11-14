@@ -13,6 +13,7 @@
 		0AE98D9B219A8C5A00AB4B7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE98D9A219A8C5A00AB4B7D /* Assets.xcassets */; };
 		0AE98D9E219A8C5A00AB4B7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE98D9C219A8C5A00AB4B7D /* LaunchScreen.storyboard */; };
 		0AE98DA1219A8C5A00AB4B7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE98DA0219A8C5A00AB4B7D /* main.m */; };
+		0AE98DAA219A8CE300AB4B7D /* AlgorithmObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE98DA9219A8CE300AB4B7D /* AlgorithmObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		0AE98D9D219A8C5A00AB4B7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AE98D9F219A8C5A00AB4B7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AE98DA0219A8C5A00AB4B7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AE98DA8219A8CE300AB4B7D /* AlgorithmObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgorithmObject.h; sourceTree = "<group>"; };
+		0AE98DA9219A8CE300AB4B7D /* AlgorithmObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		0AE98D90219A8C5800AB4B7D /* iOSFactory */ = {
 			isa = PBXGroup;
 			children = (
+				0AE98DA7219A8C9C00AB4B7D /* 算法 */,
 				0AE98D91219A8C5800AB4B7D /* AppDelegate.h */,
 				0AE98D92219A8C5800AB4B7D /* AppDelegate.m */,
 				0AE98D94219A8C5800AB4B7D /* ViewController.h */,
@@ -69,6 +73,15 @@
 				0AE98DA0219A8C5A00AB4B7D /* main.m */,
 			);
 			path = iOSFactory;
+			sourceTree = "<group>";
+		};
+		0AE98DA7219A8C9C00AB4B7D /* 算法 */ = {
+			isa = PBXGroup;
+			children = (
+				0AE98DA8219A8CE300AB4B7D /* AlgorithmObject.h */,
+				0AE98DA9219A8CE300AB4B7D /* AlgorithmObject.m */,
+			);
+			path = "算法";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +156,7 @@
 			files = (
 				0AE98D96219A8C5800AB4B7D /* ViewController.m in Sources */,
 				0AE98DA1219A8C5A00AB4B7D /* main.m in Sources */,
+				0AE98DAA219A8CE300AB4B7D /* AlgorithmObject.m in Sources */,
 				0AE98D93219A8C5800AB4B7D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
