@@ -45,6 +45,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A323C4721E84AE8004A3BA4 /* 阿里HTTP_DNS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "阿里HTTP_DNS";
+			sourceTree = "<group>";
+		};
 		0AE98D85219A8C5800AB4B7D = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +71,7 @@
 		0AE98D90219A8C5800AB4B7D /* iOSFactory */ = {
 			isa = PBXGroup;
 			children = (
+				0A323C4721E84AE8004A3BA4 /* 阿里HTTP_DNS */,
 				0AE98DA7219A8C9C00AB4B7D /* 算法 */,
 				0AE98D91219A8C5800AB4B7D /* AppDelegate.h */,
 				0AE98D92219A8C5800AB4B7D /* AppDelegate.m */,

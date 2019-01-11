@@ -11,6 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Tools : NSObject
+/**
+ 基础计算 截取指定小数位数 时间耗时较少
+ */
++ (NSString *)getRoundFloat:(double)floatNumber withPrecisionNum:(NSInteger)precision;
+
 + (NSDate *)dateMDWithString:(NSString *)str;
 @end
 
