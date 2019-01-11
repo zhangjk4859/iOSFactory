@@ -17,6 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 +(NSArray *)selectionSort:(NSArray *)originalArray;
 
+/*
+ *插入排序
+ */
++(NSArray *)insertionSort:(NSArray <NSString *>*)originalArray;
+
 
 @end
 
