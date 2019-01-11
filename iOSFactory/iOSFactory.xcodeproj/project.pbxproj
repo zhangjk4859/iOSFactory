@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A749E8C21BF332D00C8F65E /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A749E8B21BF332D00C8F65E /* Tools.m */; };
 		0AE98D93219A8C5800AB4B7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE98D92219A8C5800AB4B7D /* AppDelegate.m */; };
 		0AE98D96219A8C5800AB4B7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE98D95219A8C5800AB4B7D /* ViewController.m */; };
 		0AE98D99219A8C5800AB4B7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE98D97219A8C5800AB4B7D /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A749E8A21BF332D00C8F65E /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		0A749E8B21BF332D00C8F65E /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		0AE98D8E219A8C5800AB4B7D /* iOSFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE98D91219A8C5800AB4B7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0AE98D92219A8C5800AB4B7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 				0AE98D92219A8C5800AB4B7D /* AppDelegate.m */,
 				0AE98D94219A8C5800AB4B7D /* ViewController.h */,
 				0AE98D95219A8C5800AB4B7D /* ViewController.m */,
+				0A749E8A21BF332D00C8F65E /* Tools.h */,
+				0A749E8B21BF332D00C8F65E /* Tools.m */,
 				0AE98D97219A8C5800AB4B7D /* Main.storyboard */,
 				0AE98D9A219A8C5A00AB4B7D /* Assets.xcassets */,
 				0AE98D9C219A8C5A00AB4B7D /* LaunchScreen.storyboard */,
@@ -155,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AE98D96219A8C5800AB4B7D /* ViewController.m in Sources */,
+				0A749E8C21BF332D00C8F65E /* Tools.m in Sources */,
 				0AE98DA1219A8C5A00AB4B7D /* main.m in Sources */,
 				0AE98DAA219A8CE300AB4B7D /* AlgorithmObject.m in Sources */,
 				0AE98D93219A8C5800AB4B7D /* AppDelegate.m in Sources */,
@@ -302,13 +308,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2MY9DA6DCV;
 				INFOPLIST_FILE = iOSFactory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iosfactory.zjk.iOSFactory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,13 +326,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2MY9DA6DCV;
 				INFOPLIST_FILE = iOSFactory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iosfactory.zjk.iOSFactory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
