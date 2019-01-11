@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A323C4A21E85205004A3BA4 /* THURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A323C4921E85205004A3BA4 /* THURLProtocol.m */; };
 		0A749E8C21BF332D00C8F65E /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A749E8B21BF332D00C8F65E /* Tools.m */; };
 		0AE98D93219A8C5800AB4B7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE98D92219A8C5800AB4B7D /* AppDelegate.m */; };
 		0AE98D96219A8C5800AB4B7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE98D95219A8C5800AB4B7D /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A323C4821E85205004A3BA4 /* THURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THURLProtocol.h; sourceTree = "<group>"; };
+		0A323C4921E85205004A3BA4 /* THURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THURLProtocol.m; sourceTree = "<group>"; };
 		0A749E8A21BF332D00C8F65E /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		0A749E8B21BF332D00C8F65E /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		0AE98D8E219A8C5800AB4B7D /* iOSFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +51,8 @@
 		0A323C4721E84AE8004A3BA4 /* 阿里HTTP_DNS */ = {
 			isa = PBXGroup;
 			children = (
+				0A323C4821E85205004A3BA4 /* THURLProtocol.h */,
+				0A323C4921E85205004A3BA4 /* THURLProtocol.m */,
 			);
 			path = "阿里HTTP_DNS";
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				0AE98DA1219A8C5A00AB4B7D /* main.m in Sources */,
 				0AE98DAA219A8CE300AB4B7D /* AlgorithmObject.m in Sources */,
 				0AE98D93219A8C5800AB4B7D /* AppDelegate.m in Sources */,
+				0A323C4A21E85205004A3BA4 /* THURLProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

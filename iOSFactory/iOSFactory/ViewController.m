@@ -10,7 +10,7 @@
 #import "AlgorithmObject.h"
 #import "Tools.h"
 
-@interface ViewController ()
+@interface ViewController ()<NSURLSessionDataDelegate>
 
 @end
 
@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    
+    [AlgorithmObject selectionSort:@[@"3",@"4",@"1",@"2",@"3"]];
 
 }
 

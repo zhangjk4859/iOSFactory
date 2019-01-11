@@ -14,19 +14,29 @@
     NSMutableArray *marray = [NSMutableArray arrayWithArray:originalArray];
     /**
      选择排序思想
-     拿第一个数和后面的数依次比较 如果小于自身，进行交换，保证最前面的数总是最小的
+     拿第一个数 和 后面所有的数对比，谁小就在第一位
      */
-    for (int i = 0; i < marray.count - 1; i++) {//i最大为倒数第二位
-        NSString *front = marray[i];
+
+    /**
+     --- (3) (4)  1   2   3;  3 < 4;  结果  3 4 1 2 3
+     
+     --- (3)  4  (1)  2   3;  3 > 1;  结果  1 4 3 2 3
+     
+     --- (1)  4   3  (2)  3   1 < 2;  结果  1  4   3  2  3
+     
+     --- (1)  4   3  2  (3)   1 < 3;  结果  1  4   3  2  3
+     
+     循环结束，第一位是最小的，比后面的都小，虽然后面的排序不对
+
+     */
+    
+    // 5, 0 1 2 3 4; 倒数第二位是3
+    for (int i = 0; i < marray.count - 1; i++) {//i最大位数倒数第二位
         for (int j = i + 1; j < marray.count; j++) {
-            NSLog(@"---------i-----------%d",i);
-            NSLog(@"-----------j---------%d",j);
-            NSString * back = marray[j];
-            if ([(NSString *)marray[i] integerValue] > [(NSString *)marray[j] integerValue]) {
-                NSLog(@"-----------%@---------",marray[i]);
-                NSLog(@"-----------%@---------",marray[j]);
+            NSInteger frontNumber = [(NSString *)marray[i] integerValue];
+            NSInteger backNumber = [(NSString *)marray[j] integerValue];
+            if (frontNumber > backNumber) {
                 [marray exchangeObjectAtIndex:i withObjectAtIndex:j];
-                NSLog(@"交换了");
             }
         }
     }
