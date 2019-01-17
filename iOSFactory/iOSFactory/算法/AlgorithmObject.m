@@ -116,7 +116,6 @@
         }
 
     }
-
     
     CFTimeInterval end = CFAbsoluteTimeGetCurrent();
     NSLog(@"插入排序循环-----%ld次",count);
@@ -125,6 +124,53 @@
     
     return marray;
 };
+
+
+/*
+ *选择 + 二分法插入
+ */
++(NSArray *)pickDevideSort:(NSArray <NSString *>*)originalArray{
+    
+    NSMutableArray *marray = [NSMutableArray array];
+    
+    for (int i = 0; i < originalArray.count; i++) {
+        
+        NSString *selectedNumber = originalArray[i];
+        
+        //根据二分法插入数组
+        //第一个插进去
+        if (marray.count == 0) {
+            [marray addObject:selectedNumber];
+            continue;//停止执行，开始找下一个数字
+        }
+        
+        //第二个数字跟第一个进行比较
+        if (marray.count == 1) {
+            NSString *existNumber = marray[0];
+            if (selectedNumber.integerValue <= existNumber.integerValue) {//插到前面
+                [marray insertObject:selectedNumber atIndex:0];
+                continue;
+            }else{//插到后面
+                [marray addObject:selectedNumber];
+                continue;
+            }
+        }
+        
+        
+        //数组有两个数
+        if (marray.count == 2) {
+            
+        }
+        
+        
+    }
+    
+    
+    
+    
+    return marray;
+}
+
 
 
 @end

@@ -26,6 +26,7 @@
 static NSString * const URLProtocolHandledKey = @"URLProtocolHandledKey";
 @implementation THURLProtocol
 
+//对进来的请求进行拦截
 //判断哪些request需要拦截，需要返回YES；不需要返回NO
 + (BOOL)canInitWithRequest:(NSURLRequest *)request {
     //只处理http和https请求
@@ -54,6 +55,7 @@ static NSString * const URLProtocolHandledKey = @"URLProtocolHandledKey";
     return NO;
 }
 
+//上面的方法完成后直接走这个方法 不处理也可以
 //对拦截的request进行处理，修改host,添加cookie
 + (NSURLRequest *) canonicalRequestForRequest:(NSURLRequest *)request {
     NSMutableURLRequest *mutableReqeust = [request mutableCopy];
@@ -61,13 +63,15 @@ static NSString * const URLProtocolHandledKey = @"URLProtocolHandledKey";
     return [mutableReqeust copy];
 }
 
+//服务于上一个方法
 +(NSMutableURLRequest*)redirectHostInRequset:(NSMutableURLRequest*)request {
     if ([request.URL host].length == 0) {
         return request;
     }
     
-    //从URL中获取域名
+    //URL全路径
     NSString *originUrlString = [request.URL absoluteString];
+    //URL 域名
     NSString *originHostString = [request.URL host];
     
     NSRange hostRange = [originUrlString rangeOfString:originHostString];
@@ -84,9 +88,11 @@ static NSString * const URLProtocolHandledKey = @"URLProtocolHandledKey";
     HttpDnsService *httpdns = [HttpDnsService sharedInstance];
     NSString *httpDnsIP = [httpdns getIpByHostAsync:originHostString];
     */
+    
+    //获取后的ip地址 123.456.789.123
     NSString *httpDnsIP;
     if (httpDnsIP) {
-        //替换包头中的url开头的域名
+        //根据范围 把域名换成 ip
         NSString *urlString = [originUrlString stringByReplacingCharactersInRange:hostRange withString:httpDnsIP];
         NSURL *url = [NSURL URLWithString:urlString];
         request.URL = url;
@@ -143,6 +149,7 @@ static NSString * const URLProtocolHandledKey = @"URLProtocolHandledKey";
     return NO;
 }
 
+//对拦截的请求做处理 域名换成IP 然后发出去
 - (void)startLoading {
     NSMutableURLRequest *mutableReqeust = [[self request] mutableCopy];
     //标识该request已经处理过了，防止无限循环
@@ -161,6 +168,13 @@ static NSString * const URLProtocolHandledKey = @"URLProtocolHandledKey";
     [self.dnstask cancel];
 }
 
+
+
+
+
+
+
+//代理
 #pragma mark NSURLSessionDelegate
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveResponse:(NSURLResponse *)response completionHandler:(void (^)(NSURLSessionResponseDisposition))completionHandler {
     [[self client] URLProtocol:self didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageAllowed];
