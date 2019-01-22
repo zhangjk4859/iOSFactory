@@ -17,24 +17,15 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    /**
-     1.将URL中的域名替换成HTTPDNS解析出来的IP
-     
-     2.添加包头Host
-     
-     3.添加自己想要添加的Cookie，这一步视需求而定
-     
-     */
-    
 
-
-    
-    
-
-    
+    NSDictionary *dic = @{@"title":@"123123",
+                          @"name":@"123123",
+                          @"sex":@"123123"
+                          };
+    [dic autoCreatePropetyCode];
     
 
 }
