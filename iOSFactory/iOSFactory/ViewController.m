@@ -11,6 +11,9 @@
 #import "Tools.h"
 #import "THURLProtocol.h"
 
+#import "YXPopADView.h"
+#import <Masonry.h>
+
 @interface ViewController ()<NSURLSessionDataDelegate>
 
 @end
@@ -21,15 +24,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSDictionary *dic = @{@"title":@"123123",
-                          @"name":@"123123",
-                          @"sex":@"123123"
-                          };
-    [dic autoCreatePropetyCode];
+    
+   
     
 
 }
 
+- (IBAction)showPop:(UIButton *)sender {
+    
+    //弹出一个弹窗 显示信息  点击打开微信
+    YXPopADView * popView = [YXPopADView new];
+    popView.imageName = @"qrcode";
+    popView.wechatName = @"123123123";
+    [popView popADWithAnimated:YES];
+    popView.saveBlock = ^{
+        NSLog(@"12313");
+    };
+    
+    
+
+    
+}
 
 
 #pragma mark -- HttpDNSDegradationDelegate
@@ -79,6 +94,12 @@
      
      NSLog(@"插入排序=====  %@",[AlgorithmObject insertionSort:array]);
      */
+    
+    NSDictionary *dic = @{@"title":@"123123",
+                          @"name":@"123123",
+                          @"sex":@"123123"
+                          };
+    [dic autoCreatePropetyCode];
     
 }
 
