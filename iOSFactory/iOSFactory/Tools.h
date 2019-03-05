@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "NSDictionary+moreFunction.h"
-
+#import "UIColor+MoreFunction.h"
+#import "UIView+THMoreFunction.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Tools : NSObject
