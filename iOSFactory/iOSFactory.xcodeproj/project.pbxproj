@@ -14,6 +14,7 @@
 		0A725EA2221AB7F500A0CFF2 /* THCommonWordsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A725EA1221AB7F500A0CFF2 /* THCommonWordsView.m */; };
 		0A725EA9221C087B00A0CFF2 /* UIColor+MoreFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A725EA8221C087B00A0CFF2 /* UIColor+MoreFunction.m */; };
 		0A749E8C21BF332D00C8F65E /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A749E8B21BF332D00C8F65E /* Tools.m */; };
+		0A8F8BEB225F5F690085FA94 /* ThreadObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8F8BEA225F5F690085FA94 /* ThreadObject.m */; };
 		0AE98D93219A8C5800AB4B7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE98D92219A8C5800AB4B7D /* AppDelegate.m */; };
 		0AE98D96219A8C5800AB4B7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE98D95219A8C5800AB4B7D /* ViewController.m */; };
 		0AE98D99219A8C5800AB4B7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE98D97219A8C5800AB4B7D /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 		0A725EA8221C087B00A0CFF2 /* UIColor+MoreFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MoreFunction.m"; sourceTree = "<group>"; };
 		0A749E8A21BF332D00C8F65E /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		0A749E8B21BF332D00C8F65E /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		0A8F8BE9225F5F690085FA94 /* ThreadObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadObject.h; sourceTree = "<group>"; };
+		0A8F8BEA225F5F690085FA94 /* ThreadObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadObject.m; sourceTree = "<group>"; };
 		0AE98D8E219A8C5800AB4B7D /* iOSFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE98D91219A8C5800AB4B7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0AE98D92219A8C5800AB4B7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +104,15 @@
 			path = "定制视图";
 			sourceTree = "<group>";
 		};
+		0A8F8BE8225F5F4C0085FA94 /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				0A8F8BE9225F5F690085FA94 /* ThreadObject.h */,
+				0A8F8BEA225F5F690085FA94 /* ThreadObject.m */,
+			);
+			path = "多线程";
+			sourceTree = "<group>";
+		};
 		0AE98D85219A8C5800AB4B7D = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +134,7 @@
 		0AE98D90219A8C5800AB4B7D /* iOSFactory */ = {
 			isa = PBXGroup;
 			children = (
+				0A8F8BE8225F5F4C0085FA94 /* 多线程 */,
 				0A725EA3221C06B700A0CFF2 /* 定制视图 */,
 				0A1D534A21F6C5A30036A033 /* 分类 */,
 				0A323C4721E84AE8004A3BA4 /* 阿里HTTP_DNS */,
@@ -295,6 +308,7 @@
 				0A725EA9221C087B00A0CFF2 /* UIColor+MoreFunction.m in Sources */,
 				0A725E4A2213D12B00A0CFF2 /* YXPopADView.m in Sources */,
 				0AE98D96219A8C5800AB4B7D /* ViewController.m in Sources */,
+				0A8F8BEB225F5F690085FA94 /* ThreadObject.m in Sources */,
 				0A749E8C21BF332D00C8F65E /* Tools.m in Sources */,
 				0A725EA2221AB7F500A0CFF2 /* THCommonWordsView.m in Sources */,
 				0AE98DA1219A8C5A00AB4B7D /* main.m in Sources */,

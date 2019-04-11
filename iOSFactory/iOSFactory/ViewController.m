@@ -15,6 +15,7 @@
 #import <Masonry.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "THCommonWordsView.h"
+#import "ThreadObject.h"
 @interface ViewController ()<NSURLSessionDataDelegate>
 
 
@@ -29,18 +30,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   
-    //角标
-    UIView *testView = [[UIView alloc]init];
-    testView.frame = CGRectMake(100, 50, 100, 100);
-    NSString *str = @"1";
-    [testView setBadgeValue:str];
-    testView.backgroundColor = [UIColor cyanColor];
+    ThreadObject *obj = [ThreadObject new];
+    [obj run];
     
-    [self.view addSubview:testView];
-
-    
-
 }
+
 
 
 

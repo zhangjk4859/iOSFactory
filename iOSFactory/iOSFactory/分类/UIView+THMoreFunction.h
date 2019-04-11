@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (THMoreFunction)
 /**
- 
  *  给视图添加1、2、3、4角标
  
  */
