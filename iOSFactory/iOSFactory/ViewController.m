@@ -16,6 +16,9 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "THCommonWordsView.h"
 #import "ThreadObject.h"
+#import "TableViewCell.h"
+
+
 @interface ViewController ()<NSURLSessionDataDelegate>
 
 
@@ -23,17 +26,23 @@
 
 @implementation ViewController
 
-
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
-    ThreadObject *obj = [ThreadObject new];
-    [obj run];
+    //只要调用init  都会调用init with frame
+    TableViewCell *cell = [[TableViewCell alloc] init];
     
+//    TableViewCell *cell = [[TableViewCell alloc] initWithFrame:CGRectMake(0, 100, 100, 100)];
+    cell.backgroundColor = [UIColor redColor];
+    
+//    TableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([TableViewCell class]) owner:nil options:nil] lastObject];
+    
+    NSLog(@"%@",cell);
+    
+    [self.view addSubview:cell];
+    
+  
 }
+
 
 
 

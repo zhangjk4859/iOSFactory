@@ -16,7 +16,7 @@
 
 -(NSThread *)creatThreadWithTarget:(id)target selector:(SEL)selector object:(id)argument stackSize:(NSUInteger)size{
     
-    /***
+    /*** 不画图根本记不住
      
      主线程栈空间大小为 1M = 1024KB 无法修改（最大值）
      子线程默认栈控件为 512kb （最大值）
