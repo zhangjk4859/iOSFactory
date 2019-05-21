@@ -17,6 +17,12 @@
 		0A81294F226857CA00F9B288 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A81294D226857CA00F9B288 /* TableViewCell.m */; };
 		0A812950226857CA00F9B288 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A81294E226857CA00F9B288 /* TableViewCell.xib */; };
 		0A8F8BEB225F5F690085FA94 /* ThreadObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8F8BEA225F5F690085FA94 /* ThreadObject.m */; };
+		0A9BB84122896FC900366646 /* APEHomePraticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BB84022896FC900366646 /* APEHomePraticeViewController.m */; };
+		0A9BB84422896FDC00366646 /* APEHomePraticeDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BB84322896FDC00366646 /* APEHomePraticeDataController.m */; };
+		0A9BB84722897AA300366646 /* APEUserSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BB84622897AA300366646 /* APEUserSubject.m */; };
+		0A9BB84A22897AFE00366646 /* APEBaseDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BB84922897AFE00366646 /* APEBaseDataController.m */; };
+		0A9BB84D22897B8F00366646 /* APEHomePracticeSubjectsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BB84C22897B8F00366646 /* APEHomePracticeSubjectsViewModel.m */; };
+		0A9BB85022897BFA00366646 /* APEHomePracticeSubjectsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BB84F22897BFA00366646 /* APEHomePracticeSubjectsView.m */; };
 		0AE98D93219A8C5800AB4B7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE98D92219A8C5800AB4B7D /* AppDelegate.m */; };
 		0AE98D96219A8C5800AB4B7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE98D95219A8C5800AB4B7D /* ViewController.m */; };
 		0AE98D99219A8C5800AB4B7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE98D97219A8C5800AB4B7D /* Main.storyboard */; };
@@ -47,6 +53,18 @@
 		0A81294E226857CA00F9B288 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		0A8F8BE9225F5F690085FA94 /* ThreadObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadObject.h; sourceTree = "<group>"; };
 		0A8F8BEA225F5F690085FA94 /* ThreadObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadObject.m; sourceTree = "<group>"; };
+		0A9BB83F22896FC800366646 /* APEHomePraticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APEHomePraticeViewController.h; sourceTree = "<group>"; };
+		0A9BB84022896FC900366646 /* APEHomePraticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APEHomePraticeViewController.m; sourceTree = "<group>"; };
+		0A9BB84222896FDC00366646 /* APEHomePraticeDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APEHomePraticeDataController.h; sourceTree = "<group>"; };
+		0A9BB84322896FDC00366646 /* APEHomePraticeDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APEHomePraticeDataController.m; sourceTree = "<group>"; };
+		0A9BB84522897AA300366646 /* APEUserSubject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APEUserSubject.h; sourceTree = "<group>"; };
+		0A9BB84622897AA300366646 /* APEUserSubject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APEUserSubject.m; sourceTree = "<group>"; };
+		0A9BB84822897AFE00366646 /* APEBaseDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APEBaseDataController.h; sourceTree = "<group>"; };
+		0A9BB84922897AFE00366646 /* APEBaseDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APEBaseDataController.m; sourceTree = "<group>"; };
+		0A9BB84B22897B8F00366646 /* APEHomePracticeSubjectsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APEHomePracticeSubjectsViewModel.h; sourceTree = "<group>"; };
+		0A9BB84C22897B8F00366646 /* APEHomePracticeSubjectsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APEHomePracticeSubjectsViewModel.m; sourceTree = "<group>"; };
+		0A9BB84E22897BFA00366646 /* APEHomePracticeSubjectsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APEHomePracticeSubjectsView.h; sourceTree = "<group>"; };
+		0A9BB84F22897BFA00366646 /* APEHomePracticeSubjectsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APEHomePracticeSubjectsView.m; sourceTree = "<group>"; };
 		0AE98D8E219A8C5800AB4B7D /* iOSFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE98D91219A8C5800AB4B7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0AE98D92219A8C5800AB4B7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,6 +139,25 @@
 			path = "多线程";
 			sourceTree = "<group>";
 		};
+		0A9BB83E22896F2D00366646 /* MSDCVCVMV */ = {
+			isa = PBXGroup;
+			children = (
+				0A9BB83F22896FC800366646 /* APEHomePraticeViewController.h */,
+				0A9BB84022896FC900366646 /* APEHomePraticeViewController.m */,
+				0A9BB84222896FDC00366646 /* APEHomePraticeDataController.h */,
+				0A9BB84322896FDC00366646 /* APEHomePraticeDataController.m */,
+				0A9BB84522897AA300366646 /* APEUserSubject.h */,
+				0A9BB84622897AA300366646 /* APEUserSubject.m */,
+				0A9BB84822897AFE00366646 /* APEBaseDataController.h */,
+				0A9BB84922897AFE00366646 /* APEBaseDataController.m */,
+				0A9BB84B22897B8F00366646 /* APEHomePracticeSubjectsViewModel.h */,
+				0A9BB84C22897B8F00366646 /* APEHomePracticeSubjectsViewModel.m */,
+				0A9BB84E22897BFA00366646 /* APEHomePracticeSubjectsView.h */,
+				0A9BB84F22897BFA00366646 /* APEHomePracticeSubjectsView.m */,
+			);
+			path = MSDCVCVMV;
+			sourceTree = "<group>";
+		};
 		0AE98D85219A8C5800AB4B7D = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +184,7 @@
 				0A1D534A21F6C5A30036A033 /* 分类 */,
 				0A323C4721E84AE8004A3BA4 /* 阿里HTTP_DNS */,
 				0AE98DA7219A8C9C00AB4B7D /* 算法 */,
+				0A9BB83E22896F2D00366646 /* MSDCVCVMV */,
 				0AE98D91219A8C5800AB4B7D /* AppDelegate.h */,
 				0AE98D92219A8C5800AB4B7D /* AppDelegate.m */,
 				0AE98D94219A8C5800AB4B7D /* ViewController.h */,
@@ -313,11 +351,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9BB84722897AA300366646 /* APEUserSubject.m in Sources */,
 				0A3BE0E2222E70A800FFACF6 /* UIView+THMoreFunction.m in Sources */,
 				0A725EA9221C087B00A0CFF2 /* UIColor+MoreFunction.m in Sources */,
 				0A725E4A2213D12B00A0CFF2 /* YXPopADView.m in Sources */,
 				0AE98D96219A8C5800AB4B7D /* ViewController.m in Sources */,
+				0A9BB84A22897AFE00366646 /* APEBaseDataController.m in Sources */,
+				0A9BB84D22897B8F00366646 /* APEHomePracticeSubjectsViewModel.m in Sources */,
 				0A8F8BEB225F5F690085FA94 /* ThreadObject.m in Sources */,
+				0A9BB84122896FC900366646 /* APEHomePraticeViewController.m in Sources */,
+				0A9BB85022897BFA00366646 /* APEHomePracticeSubjectsView.m in Sources */,
 				0A749E8C21BF332D00C8F65E /* Tools.m in Sources */,
 				0A81294F226857CA00F9B288 /* TableViewCell.m in Sources */,
 				0A725EA2221AB7F500A0CFF2 /* THCommonWordsView.m in Sources */,
@@ -325,6 +368,7 @@
 				0AE98DAA219A8CE300AB4B7D /* AlgorithmObject.m in Sources */,
 				0AE98D93219A8C5800AB4B7D /* AppDelegate.m in Sources */,
 				0A1D534D21F6C5C30036A033 /* NSDictionary+moreFunction.m in Sources */,
+				0A9BB84422896FDC00366646 /* APEHomePraticeDataController.m in Sources */,
 				0A323C4A21E85205004A3BA4 /* THURLProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

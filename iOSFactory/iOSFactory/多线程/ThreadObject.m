@@ -45,4 +45,31 @@
     return t;
     
 }
+
+/***
+ 自己未实现 发送给另一个object
+ */
+-(void)forwardInvocation:(NSInvocation *)anInvocation{
+    // located a object
+    // send the message to the object using anInvocation
+    
+    SEL selector = [anInvocation selector];
+    NSObject *obj;
+    
+    if ([obj respondsToSelector:selector]) {
+        [anInvocation invokeWithTarget:obj];
+    }else{
+        [super forwardInvocation:anInvocation];
+    }
+    
+    NSMethodSignature *sig = [self methodSignatureForSelector:@selector(nickname)];
+}
+
+/***
+ 两个方法必须同时实现 需要转发的消息在这里生成
+ */
+-(NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{
+    return nil;
+}
+
 @end

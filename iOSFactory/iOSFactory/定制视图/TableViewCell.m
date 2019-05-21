@@ -8,13 +8,18 @@
 
 #import "TableViewCell.h"
 
+//加了 static 表明这个变量只分配一次，并且只服务于当前这个类，当前命名空间
+//不加 static 编译器会认为这个变量分配多次，即使别的类访问不到，但是别的类有同名，也会被认为重复
+//所以 static 就是 当前命名空间的一次 意思，不加 编译器就会认为多次 全局，报重复的错误
+static NSString *ABC = @"123";
+
 @implementation TableViewCell
 
 //上面是代码创建的路线
 // 1.
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
-    
+    ABC = @"123123123";
     
     NSLog(@"%s",__func__);
     
@@ -24,7 +29,7 @@
 // 2.
 -(instancetype)init{
     self = [super init];
-    
+    ABC;
     
     NSLog(@"%s",__func__);
     

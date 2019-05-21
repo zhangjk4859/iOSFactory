@@ -24,25 +24,48 @@
 
 @end
 
+
+void caculateGoldenRatio(){
+    static double number = 2;
+    number = 1 / number + 1;
+    printf("%lf\n",number);
+//    caculateGoldenRatio();
+}
+
+
+
+void swap(int a,int b){
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+    printf("a ====  %d,b ==== %d \n\n\n\n\n\n\n\n\n\n\n\n\n",a,b);
+}
+
+
+
 @implementation ViewController
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //只要调用init  都会调用init with frame
-    TableViewCell *cell = [[TableViewCell alloc] init];
-    
-//    TableViewCell *cell = [[TableViewCell alloc] initWithFrame:CGRectMake(0, 100, 100, 100)];
-    cell.backgroundColor = [UIColor redColor];
-    
-//    TableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([TableViewCell class]) owner:nil options:nil] lastObject];
-    
-    NSLog(@"%@",cell);
-    
-    [self.view addSubview:cell];
-    
+
   
+    int a = 1024;
+    int b = 4097;
+    swap(a,b);
+    
 }
 
+
+-(void)goldenRatio{
+
+    static double number = 2;
+    number = 1 / number + 1;
+    [self goldenRatio];
+    NSLog(@"%lf",number);
+}
 
 
 

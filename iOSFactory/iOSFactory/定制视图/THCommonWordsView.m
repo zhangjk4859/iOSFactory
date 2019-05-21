@@ -9,6 +9,10 @@
 #import "THCommonWordsView.h"
 #import <Masonry.h>
 
+
+static NSString *ABC = @"123";
+
+
 @interface THCommonWordsView()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSMutableArray *dataArray;
